@@ -8,7 +8,12 @@ html{
     font-size: 10px;
     font-family: 'Cairo', sans-serif;
 }
-a {display:block;}
+a {
+    display:block;
+    color: rgb(234, 12, 237);
+    font-family: Georgia;
+    font-size: xx-large;
+}
 a:link {
     text-decoration: none;
 }
@@ -30,7 +35,10 @@ h1{
     font-size: large;
     text-align: center;
 }
-
+p{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
 .container{
     min-height: 50vh;
     width: 100%;

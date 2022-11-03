@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Cairo', sans-serif;
+}
+a {
+    display:block;
+    color: rgb(234, 12, 237);
+    font-family: Georgia;
+    font-size: xx-large;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+h1{
+    text-decoration: overline;
+    font: verdana;
+    font-size: large;
+    text-align: center;
+}
+p{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    min-height: 50vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+body{
+    /* background-image:  linear-gradient(90deg, #8cc30b 0%, #11ab06 100%); */
+    background-image:  linear-gradient(90deg, #eee3e3 0%, #11ab06 100%);
+}

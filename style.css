@@ -50,6 +50,7 @@ h1 {
     }
 }
 /* END OF BG */
+/* global styles */
 a {
     display:block;
     color: rgb(234, 12, 237);
@@ -87,23 +88,32 @@ p{
     display:flex;
     align-items: center;
     justify-content: center;
+    padding: 1cm;
+
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+
+
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; 
+
+    width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
 }
-.tlp container{
-    min-height: 20vh;
-    width: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
+/* end of container */
+
+/* start of about  */
 img{
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 150px;
     object-fit: cover;
 }
-body{
-    /* background-image:  linear-gradient(90deg, #8cc30b 0%, #11ab06 100%); */
-    background-image:  linear-gradient(90deg, #eee3e3 0%, #11ab06 100%);
-}
+
 #about .about{
     flex-direction: column-reverse;
     text-align: centre;
@@ -124,17 +134,7 @@ body{
     letter-spacing: .2rem;
     margin-bottom: 10px;
 }
-#about .col-right p{
-    font-size: large;
-    color: rgb(4, 5, 5);
-    margin-bottom: 20px;
-}
-#about .col-right .cta{
-    color: rgb(215, 111, 111);
-    margin-bottom: 50px;
-    padding: 10px 20px;
-    font-size: 2rem;
-}
+
 #about .col-left .about-img{
     position: relative;
     height: 100%;
@@ -151,3 +151,41 @@ body{
     border: 8px solid rgb(53, 151, 33);
     z-index: -1;
 }
+/* end of about */
+
+/* card style */
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the counter cards */
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+padding: 16px;
+text-align: center;
+background-color: #f1f1f1;
+
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+}
+/* end of cards */

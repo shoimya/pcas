@@ -56,6 +56,27 @@
                         </td>
                     </tr>
 
+                    <tr>
+                      <td>11/08/2022</td>
+                      <td>Dorian, David, Ricky, Shoimya and Rikito</td>
+                      <td>4:12pm - 4:27pm (15mins)</td>
+                      <td>David</td>
+                      <td>Task Check up</td>
+                      <td>Went over what needs to be done for the rest of the week, assigned roles for who is doing what. Need to come up with invariants + more questions. Need to give feed back on diagram Ricky will create. 
+                        </td>
+                    </tr>
+
+                    <tr>
+                      <td>11/10/2022</td>
+                      <td>Dorian, David, Shoimya and Rikito</td>
+                      <td>4:10pm - 4:25pm (15mins)</td>
+                      <td>David</td>
+                      <td>Feedback</td>
+                      <td>Got feedback from professor on diagrams created, talked about changes that can be made to diagram, consider things to make our PCAS system as good as it can be. Discussed what needed to be done for prototype v1. 
+                        </td>
+                    </tr>
+
+
                   </table>
                 </div>
             
@@ -65,6 +86,16 @@
             
                 <div class="content">
                 <h1>Intermediate Drafts</h1>
+                <h2>11/10/2022 - Requirements Draft</h2>
+                <embed src=
+                "documents/Requirements PCAS3.pdf" 
+                               width="1000"
+                               height="700">
+                <h2>11/10/2022 - Invariants Draft</h2>
+                <embed src=
+                "documents/Invariants PCAS3.pdf" 
+                              width="1000"
+                              height="700">
                 </div>
             
             
@@ -74,83 +105,11 @@
 
                 <div class="content">
                 <h1>Questions/Answers	with	customers	and	other	resources</h1>
-                <section id="info">
-                  <h2>Statistics</h2>
-                  <p>
-                    Q: How far and wide can sensors detect a pedestrian?
-                    <br>A: 200 m is likely a good standard to go off of. However, as a group we should double check this and research what is effective. This only really needs to apply to the front sensor.
-                  </p>
-                  <p>
-                    Q: How far ahead of a pedestrian would the vehicle need to stop?
-                    <br>A: Assume no swerving is involved in the system. Simply a linear braking path. Brake before reaching a pedestrian. 1/2 m diameter for the person. Collision zone of 2 m. Can do research on our own. What's a comfortable deceleration value (achievable/realistic)?
-                  </p>
-                  <p>
-                    Q: How does 900ms affect compared to 200ms
-                    <br>A: It takes longer to apply brakes, and slow down. We need to adjust other behavior to make sure we avoid collisions.
-                  <p> 
-                    Q: Realistically, do you think that the system performance would be affected by speed, and should there be a limit on the velocity for the system to work?
-                    <br>A: This needs to be decided as we work.
-                  </p>
-                  <p>  
-                    Q: Should there be a limit on the velocity for the system to work? 
-                    <br>A: That's something you will need to figure out.
-                  </p>
-                  <p> 
-                    Q: Who is the user and how do they interact?
-                    <br>A: What makes sense and is valuable. Ideally this would be who the driver is. Interact with based on our ideas. AES/ABS is an option to have as a user. It comes down to what we, as developers, think overall.
-                  </p>
-                </section>
-
-                <section id="info">
-                  <h2>Quality</h2>
-                  <p>
-                    Q: What is the minimal quality of hardware that would be required in order to run this system, and what are the costs to this?
-                    <br>A: You should be looking at using things that are realistic for automotive use in terms of price. It should also be hardware that is in production or has a path to production.
-                  </p>
-                  <p>
-                    Q: What other sensors/hardware can be included in order to improve overall safety?
-                    <br>A: Assuming there is a sensor for pedestrians, and a sensor for fail safe mode, any other sensors are at the teams discretion. Once again, research into what would be beneficial.
-                  </p>
-                </section>
-
-                <section id="info">
-                  <h2>System Information</h2>
-                  <p>
-                    Q: In case of wanting the system off for whatever reason how will this be handled?
-                    <br>A: There are a large number of ways to turn off the system. This is open-ended and should be researched as to what is effective.
-                  </p>
-
-                  <p>
-                    Q: Would you like to alert the user, and if so how?
-                    <br>A: We get to decide. What is intuitive to us as a driver?. What's safe? Some options are as follows: vibrating steering wheel. lights on the dashboard, sounds, etc.
-                  </p>
-                  <p>
-                    Q: How does the failsafe mode work?
-                    <br>A: It is something that we need to define. Assume that there is another sensor on the car that says failsafe mode on because of an external factor: How does the system behavior change.
-                  </p>
-                  <p>
-                    Q: If the driver decides to take over, who gets the last say? The system or the driver?
-                    <br>A: This is up to us, what do we want?
-                  </p>
-                  <p>
-                    Q: Will we be able to override this system for other scenarios?
-                    <br>A: Overrides should be possible, we decide how to make it available. Should it be with an alert? What does driver need to do to take over? Methods already in production, don't make it too hard or too easy to take over.
-                  </p>
-                </section>
-                <section id="info">
-                  <h2>Pedestrian Handling</h2>
-                  <p>
-                    Q: What constitutes a pedestrian? Bikes, children, animals?
-                    <br>A: Assume that the radar says yes there is a pedestrian, or no there is not. And if yes, then take action.
-                  </p>
-                  <p>
-                    Q: After the vehicle stops, and the pedestrian is no longer a hazard, what should happen?
-                    <br>A: This is up to us. What would we want as a driver?
-                  </p>
-                  <p>
-                    Q: How should the system behave if a pedestrian is not moving and refuses to move?
-                    <br>A: We should design this into our system. it is probably best for the human/driver to take over. Provide alerts and some action for this takeover. Define this. It is not in scope to include an automatic maneuver around.
-                  </p>
+                <h2>11/10/2022 - Questions & Answers</h2>
+                <embed src=
+                "documents/Customer Questions PCAS3.pdf" 
+                              width="1000"
+                              height="700">
                 </section>
 
                 </div>
